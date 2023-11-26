@@ -1,5 +1,7 @@
+require('dotenv').config();
+
 const config = {
-    MONGO_URI:"mongodb+srv://admin:admin123@upload-files-database.evmv24l.mongodb.net/?retryWrites=true&w=majority"
-}
+    MONGO_URI: process.env.PAULA_DB
+};
 
 module.exports = config;
